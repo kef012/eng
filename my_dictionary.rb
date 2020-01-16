@@ -63,7 +63,8 @@ class EngDictionary
 
     def quiz
         puts "(enter to see the meaning)"
-        7.times do
+        flag = 0
+        while(flag == 0) do
             id = rand( @dictionary.length )
             i = 0
             @dictionary.each{|key,value|
@@ -71,6 +72,9 @@ class EngDictionary
                     print "-----------------\n"  
                     print "WORD:        #{key}\n"
                     ans = gets.chomp()
+                    if ans == "quit" || ans == "exit" || ans == "9"
+                        flag = 1
+                    end
                     print "MEANING:     #{value}\n"
                 end
                 i += 1
