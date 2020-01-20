@@ -121,7 +121,7 @@ methodology:方法論
 moderator:仲介者、司会者、議長、（原子炉の中性子の）減速体
 loyal:忠義な、誠実で
 affair:(するべき)仕事、用事、事務、業務、個人的な問題、(漠然と)こと、出来事、事件、もの、品
-rbitrate:仲裁をする
+arbitrate:仲裁をする
 guru:指導者、（ヒンズー教の）導師
 chief:かしら、ボス、長、親分
 compensation::償い、代償、賠償、補償金

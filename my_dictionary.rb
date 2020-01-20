@@ -29,8 +29,8 @@ class EngDictionary
         end
     end
 
-    def readFile
-      File.open("Eng_words.txt"){|f|
+    def readFile(file_name)
+      File.open(file_name){|f|
             f.each_line{|line|
                 word = "" 
                 if line.size() < 1
@@ -84,9 +84,14 @@ class EngDictionary
 
 end
 
-
-
 eng_dic = EngDictionary.new
-eng_dic.readFile
+puts "files in current directory..."
+puts "*----------------------------------------------------*"
+system("ls")
+puts "*----------------------------------------------------*"
+print "enter your dictionary file name >> "
+
+file_name = gets.chomp
+eng_dic.readFile(file_name)
 
 choice = eng_dic.menu
